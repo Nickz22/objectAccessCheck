@@ -1,0 +1,44 @@
+{
+    "name": "force-app",
+    "scripts": {
+      "pr-predestroy": "./bin/ra-org-delete.sh"
+    },
+    "env": {
+    "SFDX_DEV_HUB_AUTH_URL": {
+      "required": true,
+      "value": "force://SalesforceDevelopmentExperience:1384510088588713504:5Aep861xP.a3YmKQ.45CzfyGMvVIa2vbtyvv5ycrNIbLgKreW0fQ87qbSGhRkeaU.KOW29coZsbomEwp0c2lnKm@cunning-badger-172363-dev-ed.my.salesforce.com"
+    },
+    "SFDX_BUILDPACK_DEBUG": {
+      "required": true,
+      "generator":"secret"
+    },
+    "HEROKU_APP_NAME" : {
+      "required": true,
+      "generator":"secret"
+    }
+  },
+    "formation": {
+    },
+    "addons": [
+  
+    ],
+    "stack": "heroku-18",
+    "buildpacks": [
+         {
+          "url": "https://github.com/heroku/salesforce-cli-buildpack#v3"
+        },
+        {
+          "url": "https://github.com/heroku/salesforce-buildpack#v2"
+        }
+    ],
+    "environments": {
+      "test": {
+        "scripts": {
+          "test-setup":
+            "./vendor/sfdx/release.sh ci-$HEROKU_TEST_RUN_COMMIT_VERSION && ./bin/test-setup.sh",
+          "test": "./bin/test.sh"
+        }       
+      }
+    }
+  }
+  
