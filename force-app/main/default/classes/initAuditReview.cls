@@ -2,6 +2,8 @@ public class initAuditReview {
 
 	public class initAuditReviewException extends Exception {}
 
+	System.debug('a test change');
+	
 	// initialize some text variables
 	static final String REVIEW_NAME = ' User Access Review';
 	static final String NO_USER_ERROR = 'no Active Users found';
