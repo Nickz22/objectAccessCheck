@@ -32,7 +32,7 @@ private class initAuditReviewTest {
 
 		List<Reviewer__c> r = [SELECT Id FROM Reviewer__c];
 
-		System.assertEquals(uarUsers.size(), 301, 'too many/few uar users created in test');
+		System.assertEquals(uarUsers.size(), 300, 'too many/few uar users created in test');
 
 		System.assertEquals(snapshots.keyset().size(), 300, 'too many/few snapshots created in test');
 
