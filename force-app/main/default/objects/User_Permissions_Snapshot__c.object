@@ -713,5 +713,6 @@
     </nameField>
     <pluralLabel>User Permission Snapshots</pluralLabel>
     <searchLayouts/>
+    <deploymentStatus>Deployed</deploymentStatus>
     <sharingModel>ReadWrite</sharingModel>
 </CustomObject>
