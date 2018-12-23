@@ -25,7 +25,7 @@ HEROKU_PROD_APP_NAME="prod$TICKS"
 HEROKU_PIPELINE_NAME="obj-access-check"
 
 # Usernames or aliases of the orgs you're using
-DEV_HUB_USERNAME="MyTP2"
+DEV_HUB_USERNAME="MyTP3"
 DEV_USERNAME="tRCdev"
 STAGING_USERNAME="devHub0"
 PROD_USERNAME="devHub1"
