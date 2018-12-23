@@ -1,0 +1,632 @@
+[
+    [
+        "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app",
+        {
+            "state": "u",
+            "sourcePath": "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 96,
+            "modifiedTime": 1545504318080,
+            "changeTime": 1545517576508,
+            "contentHash": "b28b7af69320201d1cf206ebf28373980add1451",
+            "isWorkspace": false,
+            "isArtifactRoot": true
+        }
+    ],
+    [
+        "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main",
+        {
+            "state": "u",
+            "sourcePath": "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 96,
+            "modifiedTime": 1545504318080,
+            "changeTime": 1545504318080,
+            "contentHash": "7505d64a54e061b7acd54ccd58b49dc43500b635",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default",
+        {
+            "state": "u",
+            "sourcePath": "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 224,
+            "modifiedTime": 1545528216940,
+            "changeTime": 1545528216940,
+            "contentHash": "09898a26e70e0b61f958ad64f35bfb053d63193a",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/classes",
+        {
+            "state": "u",
+            "sourcePath": "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/classes",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 512,
+            "modifiedTime": 1545524564728,
+            "changeTime": 1545524564728,
+            "contentHash": "2fede14415294327e331c0b947446e8b1bf5f586",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/classes/Constants.cls",
+        {
+            "state": "u",
+            "sourcePath": "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/classes/Constants.cls",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 2041,
+            "modifiedTime": 1545527385592,
+            "changeTime": 1545527385592,
+            "contentHash": "b38ce67d80fbb06f0f53beb6119d8f3c083fd8a7",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/classes/Constants.cls-meta.xml",
+        {
+            "state": "u",
+            "sourcePath": "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/classes/Constants.cls-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 174,
+            "modifiedTime": 1545517011494,
+            "changeTime": 1545517011494,
+            "contentHash": "734b048ce41db916f2088ea40ecdc25c420434ef",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/classes/InitAuditUtility.cls",
+        {
+            "state": "u",
+            "sourcePath": "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/classes/InitAuditUtility.cls",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 18834,
+            "modifiedTime": 1545538308562,
+            "changeTime": 1545538308562,
+            "contentHash": "e3268e5088e323701c4fb36beab693e1e41b23e2",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/classes/InitAuditUtility.cls-meta.xml",
+        {
+            "state": "u",
+            "sourcePath": "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/classes/InitAuditUtility.cls-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 174,
+            "modifiedTime": 1545517011507,
+            "changeTime": 1545517011507,
+            "contentHash": "0bfc8bc49e53c8f0f6b207cf675766c0d6546ee5",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/classes/aggregateObjectPermissions.cls",
+        {
+            "state": "u",
+            "sourcePath": "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/classes/aggregateObjectPermissions.cls",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 1970,
+            "modifiedTime": 1545517011511,
+            "changeTime": 1545524899200,
+            "contentHash": "1a305d5a85c593e439eb4974458050d7fabbda7a",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/classes/aggregateObjectPermissions.cls-meta.xml",
+        {
+            "state": "u",
+            "sourcePath": "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/classes/aggregateObjectPermissions.cls-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 174,
+            "modifiedTime": 1545517011510,
+            "changeTime": 1545517011510,
+            "contentHash": "0bfc8bc49e53c8f0f6b207cf675766c0d6546ee5",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/classes/getSnapshotSystemPermissions.cls",
+        {
+            "state": "u",
+            "sourcePath": "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/classes/getSnapshotSystemPermissions.cls",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 1746,
+            "modifiedTime": 1545517011514,
+            "changeTime": 1545517011514,
+            "contentHash": "e54677b7626c87144c1d9c4ca650c3e319edf407",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/classes/getSnapshotSystemPermissions.cls-meta.xml",
+        {
+            "state": "u",
+            "sourcePath": "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/classes/getSnapshotSystemPermissions.cls-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 174,
+            "modifiedTime": 1545517011513,
+            "changeTime": 1545517011513,
+            "contentHash": "0bfc8bc49e53c8f0f6b207cf675766c0d6546ee5",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/classes/initAuditReview.cls",
+        {
+            "state": "u",
+            "sourcePath": "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/classes/initAuditReview.cls",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 1824,
+            "modifiedTime": 1545537146365,
+            "changeTime": 1545537146365,
+            "contentHash": "322158a6eeb439ab78ed1f9ab9d60739821353b5",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/classes/initAuditReview.cls-meta.xml",
+        {
+            "state": "u",
+            "sourcePath": "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/classes/initAuditReview.cls-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 174,
+            "modifiedTime": 1545517011517,
+            "changeTime": 1545517011517,
+            "contentHash": "0bfc8bc49e53c8f0f6b207cf675766c0d6546ee5",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/classes/initAuditReviewTest.cls",
+        {
+            "state": "u",
+            "sourcePath": "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/classes/initAuditReviewTest.cls",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 4352,
+            "modifiedTime": 1545528181281,
+            "changeTime": 1545528181281,
+            "contentHash": "66b823a4e0830276aa1756296ac0ac9bc90df36d",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/classes/initAuditReviewTest.cls-meta.xml",
+        {
+            "state": "u",
+            "sourcePath": "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/classes/initAuditReviewTest.cls-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 174,
+            "modifiedTime": 1545517011523,
+            "changeTime": 1545517011523,
+            "contentHash": "0bfc8bc49e53c8f0f6b207cf675766c0d6546ee5",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/classes/initPermissionSnapshots.cls",
+        {
+            "state": "u",
+            "sourcePath": "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/classes/initPermissionSnapshots.cls",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 1008,
+            "modifiedTime": 1545517011538,
+            "changeTime": 1545527463577,
+            "contentHash": "1ae6c9b762d5888c4f10184b9e4896100ac98c33",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/classes/initPermissionSnapshots.cls-meta.xml",
+        {
+            "state": "u",
+            "sourcePath": "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/classes/initPermissionSnapshots.cls-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 174,
+            "modifiedTime": 1545517011527,
+            "changeTime": 1545517011527,
+            "contentHash": "0bfc8bc49e53c8f0f6b207cf675766c0d6546ee5",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/customMetadata",
+        {
+            "state": "u",
+            "sourcePath": "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/customMetadata",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 160,
+            "modifiedTime": 1545535342571,
+            "changeTime": 1545535342571,
+            "contentHash": "915b5cc8ab3cb5162894122e4619791eebb4c680",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/customMetadata/In_Scope_Audit_Object.Account.md-meta.xml",
+        {
+            "state": "u",
+            "sourcePath": "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/customMetadata/In_Scope_Audit_Object.Account.md-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 396,
+            "modifiedTime": 1545517011540,
+            "changeTime": 1545517011540,
+            "contentHash": "072fb906786f4a43daa55ba566e4599586bc6ea3",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/customMetadata/In_Scope_Audit_Object.Case.md-meta.xml",
+        {
+            "state": "u",
+            "sourcePath": "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/customMetadata/In_Scope_Audit_Object.Case.md-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 390,
+            "modifiedTime": 1545517011549,
+            "changeTime": 1545517011549,
+            "contentHash": "c8455879378ef8363a56592e7f8ed305c3e6753d",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/customMetadata/In_Scope_Audit_Object.Opportunity.md-meta.xml",
+        {
+            "state": "u",
+            "sourcePath": "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/customMetadata/In_Scope_Audit_Object.Opportunity.md-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 404,
+            "modifiedTime": 1545517011554,
+            "changeTime": 1545517011554,
+            "contentHash": "3d5b6b6e57feedbf7d89b60e4c3a259f71b226be",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/labels",
+        {
+            "state": "u",
+            "sourcePath": "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/labels",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 96,
+            "modifiedTime": 1545517011584,
+            "changeTime": 1545517011584,
+            "contentHash": "c3835cc038e1e9f66a66938c26f39887d32c77d8",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/labels/CustomLabels.labels-meta.xml",
+        {
+            "state": "u",
+            "sourcePath": "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/labels/CustomLabels.labels-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 23641,
+            "modifiedTime": 1545517011584,
+            "changeTime": 1545525729398,
+            "contentHash": "d302b4e8138ea123cd931d5d0737089064b470f8",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/objects",
+        {
+            "state": "u",
+            "sourcePath": "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/objects",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 128,
+            "modifiedTime": 1545536671376,
+            "changeTime": 1545536671376,
+            "contentHash": "511f3fb74c8fe684c3eb4b311cc23c96203f5766",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/objects/In_Scope_Audit_Object__mdt",
+        {
+            "state": "u",
+            "sourcePath": "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/objects/In_Scope_Audit_Object__mdt",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 128,
+            "modifiedTime": 1545535251943,
+            "changeTime": 1545535251943,
+            "contentHash": "6c94dea5619ee753e346be68699b3de97773b870",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/objects/In_Scope_Audit_Object__mdt/In_Scope_Audit_Object__mdt.object-meta.xml",
+        {
+            "state": "u",
+            "sourcePath": "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/objects/In_Scope_Audit_Object__mdt/In_Scope_Audit_Object__mdt.object-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 249,
+            "modifiedTime": 1545535251943,
+            "changeTime": 1545535251943,
+            "contentHash": "5d6c965209dd1764a7eae397327dcd76e77a5c3e",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/objects/In_Scope_Audit_Object__mdt/fields",
+        {
+            "state": "u",
+            "sourcePath": "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/objects/In_Scope_Audit_Object__mdt/fields",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 96,
+            "modifiedTime": 1545535251943,
+            "changeTime": 1545535251943,
+            "contentHash": "87212456288d29ecb6abda2a4bf819b28d0aa36a",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/objects/In_Scope_Audit_Object__mdt/fields/API_Name__c.field-meta.xml",
+        {
+            "state": "u",
+            "sourcePath": "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/objects/In_Scope_Audit_Object__mdt/fields/API_Name__c.field-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 385,
+            "modifiedTime": 1545535251943,
+            "changeTime": 1545535251943,
+            "contentHash": "f69620c717fe92e6140e8e80c75a78520ca2627e",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/objects/User_Permissions_Snapshot__c",
+        {
+            "state": "u",
+            "sourcePath": "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/objects/User_Permissions_Snapshot__c",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 160,
+            "modifiedTime": 1545536671381,
+            "changeTime": 1545536671381,
+            "contentHash": "9c6fc528ff684f6b1b0e75fc0c6ca51695d814c0",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/objects/User_Permissions_Snapshot__c/User_Permissions_Snapshot__c.object-meta.xml",
+        {
+            "state": "u",
+            "sourcePath": "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/objects/User_Permissions_Snapshot__c/User_Permissions_Snapshot__c.object-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 2164,
+            "modifiedTime": 1545536671378,
+            "changeTime": 1545536671378,
+            "contentHash": "4662fb5cfb6548cafafa0ded65962243325bbc81",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/objects/User_Permissions_Snapshot__c/fields",
+        {
+            "state": "u",
+            "sourcePath": "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/objects/User_Permissions_Snapshot__c/fields",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 288,
+            "modifiedTime": 1545536671381,
+            "changeTime": 1545536671381,
+            "contentHash": "e6703593c9243e42955d784960546b29b73069c3",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/objects/User_Permissions_Snapshot__c/fields/Delete_Access__c.field-meta.xml",
+        {
+            "state": "u",
+            "sourcePath": "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/objects/User_Permissions_Snapshot__c/fields/Delete_Access__c.field-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 1033,
+            "modifiedTime": 1545536671378,
+            "changeTime": 1545536671378,
+            "contentHash": "99506d38691ddeaeab40a6aa5ebb1ab1177bdaff",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/objects/User_Permissions_Snapshot__c/fields/Edit_Access__c.field-meta.xml",
+        {
+            "state": "u",
+            "sourcePath": "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/objects/User_Permissions_Snapshot__c/fields/Edit_Access__c.field-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 1029,
+            "modifiedTime": 1545536671379,
+            "changeTime": 1545536671379,
+            "contentHash": "aeb81ad6cd9026a5eaa53ccf224cbccd794be184",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/objects/User_Permissions_Snapshot__c/fields/Modify_All_Access__c.field-meta.xml",
+        {
+            "state": "u",
+            "sourcePath": "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/objects/User_Permissions_Snapshot__c/fields/Modify_All_Access__c.field-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 1041,
+            "modifiedTime": 1545536671379,
+            "changeTime": 1545536671379,
+            "contentHash": "aff46dabd7d40cccd74f714b61d8982a3774cb21",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/objects/User_Permissions_Snapshot__c/fields/Read_Access__c.field-meta.xml",
+        {
+            "state": "u",
+            "sourcePath": "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/objects/User_Permissions_Snapshot__c/fields/Read_Access__c.field-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 1029,
+            "modifiedTime": 1545536671380,
+            "changeTime": 1545536671380,
+            "contentHash": "fd6bb7c50e46435f0df1c24532c409e67b8c8a21",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/objects/User_Permissions_Snapshot__c/fields/System_Permissions__c.field-meta.xml",
+        {
+            "state": "u",
+            "sourcePath": "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/objects/User_Permissions_Snapshot__c/fields/System_Permissions__c.field-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 687,
+            "modifiedTime": 1545536671380,
+            "changeTime": 1545536671380,
+            "contentHash": "88227c6202709667d0b0f04eb338673e482d11ac",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/objects/User_Permissions_Snapshot__c/fields/User__c.field-meta.xml",
+        {
+            "state": "u",
+            "sourcePath": "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/objects/User_Permissions_Snapshot__c/fields/User__c.field-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 457,
+            "modifiedTime": 1545536671381,
+            "changeTime": 1545536671381,
+            "contentHash": "07268b02820acf0ce571bd1f4dc8ec2f12d3d751",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/objects/User_Permissions_Snapshot__c/fields/View_All_Access__c.field-meta.xml",
+        {
+            "state": "u",
+            "sourcePath": "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/objects/User_Permissions_Snapshot__c/fields/View_All_Access__c.field-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 1037,
+            "modifiedTime": 1545536671381,
+            "changeTime": 1545536671381,
+            "contentHash": "937d85023401caab9328a75531afb6643f2a41dd",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/objects/User_Permissions_Snapshot__c/listViews",
+        {
+            "state": "u",
+            "sourcePath": "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/objects/User_Permissions_Snapshot__c/listViews",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 96,
+            "modifiedTime": 1545536671381,
+            "changeTime": 1545536671381,
+            "contentHash": "0b3931647b535802350a588b8bf16d4ae6cc2ed6",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/objects/User_Permissions_Snapshot__c/listViews/All.listView-meta.xml",
+        {
+            "state": "u",
+            "sourcePath": "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck/force-app/main/default/objects/User_Permissions_Snapshot__c/listViews/All.listView-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 204,
+            "modifiedTime": 1545536671382,
+            "changeTime": 1545536671382,
+            "contentHash": "a09136a1a46c72265bcd1de0f4a07ba06ec1e9bd",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck",
+        {
+            "state": "u",
+            "sourcePath": "/Users/nicholas.zozaya/objAccessCheck/objectAccessCheck",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 384,
+            "modifiedTime": 1545589639929,
+            "changeTime": 1545589639929,
+            "contentHash": "86da014227b12851dc859462748ffc8b2ffde5e9",
+            "isWorkspace": true,
+            "isArtifactRoot": false
+        }
+    ]
+]
