@@ -14,7 +14,7 @@ set -o nounset    # fail on unset variables
 TICKS=$(echo $(date +%s | cut -b1-13))
 
 # Name of your team (optional)
-HEROKU_TEAM_NAME="JUST_NICK" 
+HEROKU_TEAM_NAME="" 
 
 # Name of the Heroku apps you'll use
 HEROKU_DEV_APP_NAME="dev$TICKS"
@@ -22,13 +22,13 @@ HEROKU_STAGING_APP_NAME="staging$TICKS"
 HEROKU_PROD_APP_NAME="prod$TICKS"
 
 # Pipeline
-HEROKU_PIPELINE_NAME="pipeline$TICKS"
+HEROKU_PIPELINE_NAME="obj-access-check"
 
 # Usernames or aliases of the orgs you're using
-DEV_HUB_USERNAME="nickzsb.nz@brave-hawk-2umted.com"
-DEV_USERNAME="nickz@trurootscafe.com"
-STAGING_USERNAME="nickzsb.nz@cunning-wolf-8bj6s5.com"
-PROD_USERNAME="nickzsb.nz@cunning-wolf-8gbo0g.com"
+DEV_HUB_USERNAME="MyTP2"
+DEV_USERNAME="tRCdev"
+STAGING_USERNAME="devHub0"
+PROD_USERNAME="devHub1"
 
 # Repository with your code
 GITHUB_REPO="Nickz22/objectAccessCheck"
