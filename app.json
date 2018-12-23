@@ -6,7 +6,7 @@
     "env": {
     "SFDX_DEV_HUB_AUTH_URL": {
       "required": true,
-      "value": "force://SalesforceDevelopmentExperience:1384510088588713504:5Aep861j70kdjF1ZXM5T1cxFX3t6aZsDMF.U7jA4snWq04gzHPemC677yO_FN9EuLdI1IyGfUJFdK0EiJb2mcoj@cunning-wolf-8bj6s5-dev-ed.my.salesforce.com"
+      "value": "force://SalesforceDevelopmentExperience:1384510088588713504:5Aep861j70kdjF1ZXM9yjYWlG1dAKL6G4Rd8Zaf5YjDnzMZrEKsQvaTM9K1ejKCAkmhdTgUTj1X6zbtOFOFwvbU@cunning-wolf-8gbo0g-dev-ed.my.salesforce.com"
     },
     "SFDX_BUILDPACK_DEBUG": {
       "required": true,
