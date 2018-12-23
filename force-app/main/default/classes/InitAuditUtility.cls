@@ -11,14 +11,12 @@ public class InitAuditUtility {
    * @return          List<ObjectPermissions>
      * @param           Set<String> revieweeIds
      */
-	public static List<ObjectPermissions> getAllObjectPermissions(Set<String> revieweeIds){
+	public static List<ObjectPermissions> getAllObjectPermissions(){
 
 		for(In_Scope_Audit_Object__mdt inScopeObject : [SELECT Label, Api_Name__c FROM In_Scope_Audit_Object__mdt]){
 
 			objLabels.add(inScopeObject.Label);
 			objApiNames.add(inScopeObject.Api_Name__c);
-
-			System.debug('objApiNames: '+objApiNames);
 		}
 		/*
 		** Find any ObjectPermission where ParentId == PermissionSetAssignment.PermissionSetId
@@ -27,7 +25,7 @@ public class InitAuditUtility {
 														FROM ObjectPermissions
 														WHERE (ParentId IN (SELECT PermissionSetId
 																			FROM PermissionSetAssignment
-																			WHERE Assignee.Id IN: revieweeIds))
+																			WHERE Assignee.IsActive = true))
 														AND
 														PermissionsRead = true
 														AND
