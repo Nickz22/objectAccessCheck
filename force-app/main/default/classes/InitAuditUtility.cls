@@ -343,7 +343,7 @@ public class InitAuditUtility {
 		// get in-scope system permissions from related permissionSets
 		Map<Id, PermissionSet> allPermissionSets = new Map<Id, PermissionSet>(
 														[SELECT PermissionsApiEnabled, PermissionsAuthorApex, PermissionsBulkApiHardDelete,
-														PermissionsCreateCustomizeReports, PermissionsCreatePackaging,
+														PermissionsCreateCustomizeReports,
 														PermissionsInstallPackaging, PermissionsImportCustomObjects,
 														PermissionsManagePvtRptsAndDashbds, PermissionsManageRemoteAccess,
 														PermissionsManageCustomPermissions, PermissionsManageCustomReportTypes, PermissionsManageDashbdsInPubFolders,
