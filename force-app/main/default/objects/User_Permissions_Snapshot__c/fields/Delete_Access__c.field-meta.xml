@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Edit__c</fullName>
+    <fullName>Delete_Access__c</fullName>
     <externalId>false</externalId>
-    <label>Edit</label>
+    <label>Delete Access</label>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>MultiselectPicklist</type>
@@ -27,5 +27,5 @@
             </value>
         </valueSetDefinition>
     </valueSet>
-    <visibleLines>3</visibleLines>
+    <visibleLines>4</visibleLines>
 </CustomField>
