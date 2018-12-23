@@ -343,15 +343,15 @@ public class InitAuditUtility {
 		// get in-scope system permissions from related permissionSets
 		Map<Id, PermissionSet> allPermissionSets = new Map<Id, PermissionSet>(
 														[SELECT PermissionsApiEnabled, PermissionsAuthorApex, PermissionsBulkApiHardDelete,
-														PermissionsCreateCustomizeReports, PermissionsOutboundMigrationToolsUser, PermissionsCreatePackaging,
-														PermissionsInboundMigrationToolsUser, PermissionsInstallPackaging, PermissionsImportCustomObjects,
-														PermissionsIsSsoEnabled, PermissionsManagePvtRptsAndDashbds, PermissionsManageRemoteAccess,
+														PermissionsCreateCustomizeReports, PermissionsCreatePackaging,
+														PermissionsInstallPackaging, PermissionsImportCustomObjects,
+														PermissionsManagePvtRptsAndDashbds, PermissionsManageRemoteAccess,
 														PermissionsManageCustomPermissions, PermissionsManageCustomReportTypes, PermissionsManageDashbdsInPubFolders,
 														PermissionsManageDataIntegrations, PermissionsManageInteraction, PermissionsManageReportsInPubFolders, 
 														PermissionsManageSessionPermissionSets, PermissionsManageTwoFactor, PermissionsDelegatedTwoFactor,
-														PermissionsModifyAllData, PermissionsModifyMetadata, PermissionsPasswordNeverExpires, PermissionsCreateReportInLightning,
-														PermissionsNewReportBuilder, PermissionsScheduleReports, PermissionsCreateAuditFields, PermissionsTransferAnyEntity, 
-														PermissionsTwoFactorApi, PermissionsForceTwoFactor, PermissionsUpdateWithInactiveOwner, PermissionsAssignPermissionSets,
+														PermissionsModifyMetadata, PermissionsPasswordNeverExpires, PermissionsCreateReportInLightning,
+														PermissionsNewReportBuilder, PermissionsScheduleReports, PermissionsTransferAnyEntity, 
+														PermissionsTwoFactorApi, PermissionsForceTwoFactor, PermissionsAssignPermissionSets,
 														PermissionsManageInternalUsers, PermissionsManageIpAddresses, PermissionsManageLoginAccessPolicies, 
 														PermissionsManagePasswordPolicies, PermissionsManageProfilesPermissionsets, PermissionsManageRoles, 
 														PermissionsManageSharing, PermissionsManageUsers, PermissionsResetPasswords, PermissionsViewAllUsers
