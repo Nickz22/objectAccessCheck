@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Object to hold snapshot of a User&apos;s permissions within audit-scope.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Delete_Access__c</fullName>
+        <externalId>false</externalId>
+        <label>Delete Access</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Insertion Order</fullName>
+                    <default>false</default>
+                    <label>Insertion Order</label>
+                </value>
+                <value>
+                    <fullName>Placement</fullName>
+                    <default>false</default>
+                    <label>Placement</label>
+                </value>
+                <value>
+                    <fullName>Agreement</fullName>
+                    <default>false</default>
+                    <label>Agreement</label>
+                </value>
+                <value>
+                    <fullName>Upfront</fullName>
+                    <default>false</default>
+                    <label>Upfront</label>
+                </value>
+                <value>
+                    <fullName>Account</fullName>
+                    <default>false</default>
+                    <label>Account</label>
+                </value>
+                <value>
+                    <fullName>Snapchat Sales Team</fullName>
+                    <default>false</default>
+                    <label>Snapchat Sales Team</label>
+                </value>
+                <value>
+                    <fullName>Organization</fullName>
+                    <default>false</default>
+                    <label>Organization</label>
+                </value>
+                <value>
+                    <fullName>Ad Account</fullName>
+                    <default>false</default>
+                    <label>Ad Account</label>
+                </value>
+                <value>
+                    <fullName>Opportunity</fullName>
+                    <default>false</default>
+                    <label>Opportunity</label>
+                </value>
+                <value>
+                    <fullName>Case</fullName>
+                    <default>false</default>
+                    <label>Case</label>
+                </value>
+                <value>
+                    <fullName>Brand</fullName>
+                    <default>false</default>
+                    <label>Brand</label>
+                </value>
+                <value>
+                    <fullName>Upfront Entity</fullName>
+                    <default>false</default>
+                    <label>Upfront Entity</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Edit_Access__c</fullName>
+        <description>Objects to which this User has Edit Access at time of Permission Snapshot generation.</description>
+        <externalId>false</externalId>
+        <label>Edit Access</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Insertion Order</fullName>
+                    <default>false</default>
+                    <label>Insertion Order</label>
+                </value>
+                <value>
+                    <fullName>Placement</fullName>
+                    <default>false</default>
+                    <label>Placement</label>
+                </value>
+                <value>
+                    <fullName>Agreement</fullName>
+                    <default>false</default>
+                    <label>Agreement</label>
+                </value>
+                <value>
+                    <fullName>Upfront</fullName>
+                    <default>false</default>
+                    <label>Upfront</label>
+                </value>
+                <value>
+                    <fullName>Account</fullName>
+                    <default>false</default>
+                    <label>Account</label>
+                </value>
+                <value>
+                    <fullName>Snapchat Sales Team</fullName>
+                    <default>false</default>
+                    <label>Snapchat Sales Team</label>
+                </value>
+                <value>
+                    <fullName>Organization</fullName>
+                    <default>false</default>
+                    <label>Organization</label>
+                </value>
+                <value>
+                    <fullName>Ad Account</fullName>
+                    <default>false</default>
+                    <label>Ad Account</label>
+                </value>
+                <value>
+                    <fullName>Opportunity</fullName>
+                    <default>false</default>
+                    <label>Opportunity</label>
+                </value>
+                <value>
+                    <fullName>Case</fullName>
+                    <default>false</default>
+                    <label>Case</label>
+                </value>
+                <value>
+                    <fullName>Brand</fullName>
+                    <default>false</default>
+                    <label>Brand</label>
+                </value>
+                <value>
+                    <fullName>Upfront Entity</fullName>
+                    <default>false</default>
+                    <label>Upfront Entity</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Modify_All_Access__c</fullName>
+        <externalId>false</externalId>
+        <label>Modify All Access</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Insertion Order</fullName>
+                    <default>false</default>
+                    <label>Insertion Order</label>
+                </value>
+                <value>
+                    <fullName>Placement</fullName>
+                    <default>false</default>
+                    <label>Placement</label>
+                </value>
+                <value>
+                    <fullName>Agreement</fullName>
+                    <default>false</default>
+                    <label>Agreement</label>
+                </value>
+                <value>
+                    <fullName>Upfront</fullName>
+                    <default>false</default>
+                    <label>Upfront</label>
+                </value>
+                <value>
+                    <fullName>Account</fullName>
+                    <default>false</default>
+                    <label>Account</label>
+                </value>
+                <value>
+                    <fullName>Snapchat Sales Team</fullName>
+                    <default>false</default>
+                    <label>Snapchat Sales Team</label>
+                </value>
+                <value>
+                    <fullName>Organization</fullName>
+                    <default>false</default>
+                    <label>Organization</label>
+                </value>
+                <value>
+                    <fullName>Ad Account</fullName>
+                    <default>false</default>
+                    <label>Ad Account</label>
+                </value>
+                <value>
+                    <fullName>Opportunity</fullName>
+                    <default>false</default>
+                    <label>Opportunity</label>
+                </value>
+                <value>
+                    <fullName>Case</fullName>
+                    <default>false</default>
+                    <label>Case</label>
+                </value>
+                <value>
+                    <fullName>Brand</fullName>
+                    <default>false</default>
+                    <label>Brand</label>
+                </value>
+                <value>
+                    <fullName>Upfront Entity</fullName>
+                    <default>false</default>
+                    <label>Upfront Entity</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>View_All_Access__c</fullName>
+        <externalId>false</externalId>
+        <label>View All Access</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Insertion Order</fullName>
+                    <default>false</default>
+                    <label>Insertion Order</label>
+                </value>
+                <value>
+                    <fullName>Placement</fullName>
+                    <default>false</default>
+                    <label>Placement</label>
+                </value>
+                <value>
+                    <fullName>Agreement</fullName>
+                    <default>false</default>
+                    <label>Agreement</label>
+                </value>
+                <value>
+                    <fullName>Upfront</fullName>
+                    <default>false</default>
+                    <label>Upfront</label>
+                </value>
+                <value>
+                    <fullName>Account</fullName>
+                    <default>false</default>
+                    <label>Account</label>
+                </value>
+                <value>
+                    <fullName>Snapchat Sales Team</fullName>
+                    <default>false</default>
+                    <label>Snapchat Sales Team</label>
+                </value>
+                <value>
+                    <fullName>Organization</fullName>
+                    <default>false</default>
+                    <label>Organization</label>
+                </value>
+                <value>
+                    <fullName>Ad Account</fullName>
+                    <default>false</default>
+                    <label>Ad Account</label>
+                </value>
+                <value>
+                    <fullName>Opportunity</fullName>
+                    <default>false</default>
+                    <label>Opportunity</label>
+                </value>
+                <value>
+                    <fullName>Case</fullName>
+                    <default>false</default>
+                    <label>Case</label>
+                </value>
+                <value>
+                    <fullName>Brand</fullName>
+                    <default>false</default>
+                    <label>Brand</label>
+                </value>
+                <value>
+                    <fullName>Upfront Entity</fullName>
+                    <default>false</default>
+                    <label>Upfront Entity</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Read_Access__c</fullName>
+        <description>Objects to which this User has Read Access at the point in time this Permission Snapshot was created.</description>
+        <externalId>false</externalId>
+        <label>Read Access</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Insertion Order</fullName>
+                    <default>false</default>
+                    <label>Insertion Order</label>
+                </value>
+                <value>
+                    <fullName>Placement</fullName>
+                    <default>false</default>
+                    <label>Placement</label>
+                </value>
+                <value>
+                    <fullName>Agreement</fullName>
+                    <default>false</default>
+                    <label>Agreement</label>
+                </value>
+                <value>
+                    <fullName>Upfront</fullName>
+                    <default>false</default>
+                    <label>Upfront</label>
+                </value>
+                <value>
+                    <fullName>Account</fullName>
+                    <default>false</default>
+                    <label>Account</label>
+                </value>
+                <value>
+                    <fullName>Snapchat Sales Team</fullName>
+                    <default>false</default>
+                    <label>Snapchat Sales Team</label>
+                </value>
+                <value>
+                    <fullName>Organization</fullName>
+                    <default>false</default>
+                    <label>Organization</label>
+                </value>
+                <value>
+                    <fullName>Ad Account</fullName>
+                    <default>false</default>
+                    <label>Ad Account</label>
+                </value>
+                <value>
+                    <fullName>Opportunity</fullName>
+                    <default>false</default>
+                    <label>Opportunity</label>
+                </value>
+                <value>
+                    <fullName>Case</fullName>
+                    <default>false</default>
+                    <label>Case</label>
+                </value>
+                <value>
+                    <fullName>Brand</fullName>
+                    <default>false</default>
+                    <label>Brand</label>
+                </value>
+                <value>
+                    <fullName>Upfront Entity</fullName>
+                    <default>false</default>
+                    <label>Upfront Entity</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>System_Permissions__c</fullName>
+        <externalId>false</externalId>
+        <label>System Permissions</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Manage Users</fullName>
+                    <default>false</default>
+                    <label>Manage Users</label>
+                </value>
+                <value>
+                    <fullName>Modify All Data</fullName>
+                    <default>false</default>
+                    <label>Modify All Data</label>
+                </value>
+                <value>
+                    <fullName>API Enabled</fullName>
+                    <default>false</default>
+                    <label>API Enabled</label>
+                </value>
+                <value>
+                    <fullName>Api Only User</fullName>
+                    <default>false</default>
+                    <label>Api Only User</label>
+                </value>
+                <value>
+                    <fullName>Author Apex</fullName>
+                    <default>false</default>
+                    <label>Author Apex</label>
+                </value>
+                <value>
+                    <fullName>Bulk API Hard Delete</fullName>
+                    <default>false</default>
+                    <label>Bulk API Hard Delete</label>
+                </value>
+                <value>
+                    <fullName>Create and Customize Reports</fullName>
+                    <default>false</default>
+                    <label>Create and Customize Reports</label>
+                </value>
+                <value>
+                    <fullName>Create and Upload Change Sets</fullName>
+                    <default>false</default>
+                    <label>Create and Upload Change Sets</label>
+                </value>
+                <value>
+                    <fullName>Create AppExchange Packages</fullName>
+                    <default>false</default>
+                    <label>Create AppExchange Packages</label>
+                </value>
+                <value>
+                    <fullName>Deploy Change Sets</fullName>
+                    <default>false</default>
+                    <label>Deploy Change Sets</label>
+                </value>
+                <value>
+                    <fullName>Download AppExchange Packages</fullName>
+                    <default>false</default>
+                    <label>Download AppExchange Packages</label>
+                </value>
+                <value>
+                    <fullName>Import Custom Objects</fullName>
+                    <default>false</default>
+                    <label>Import Custom Objects</label>
+                </value>
+                <value>
+                    <fullName>Is Single Sign-On Enabled</fullName>
+                    <default>false</default>
+                    <label>Is Single Sign-On Enabled</label>
+                </value>
+                <value>
+                    <fullName>Manage All Private Reports and Dashboards</fullName>
+                    <default>false</default>
+                    <label>Manage All Private Reports and Dashboards</label>
+                </value>
+                <value>
+                    <fullName>Manage Connected Apps</fullName>
+                    <default>false</default>
+                    <label>Manage Connected Apps</label>
+                </value>
+                <value>
+                    <fullName>Manage Custom Permissions</fullName>
+                    <default>false</default>
+                    <label>Manage Custom Permissions</label>
+                </value>
+                <value>
+                    <fullName>Manage Custom Report Types</fullName>
+                    <default>false</default>
+                    <label>Manage Custom Report Types</label>
+                </value>
+                <value>
+                    <fullName>Manage Dashboards in Public Folders</fullName>
+                    <default>false</default>
+                    <label>Manage Dashboards in Public Folders</label>
+                </value>
+                <value>
+                    <fullName>Manage Data Integrations</fullName>
+                    <default>false</default>
+                    <label>Manage Data Integrations</label>
+                </value>
+                <value>
+                    <fullName>Manage Flow</fullName>
+                    <default>false</default>
+                    <label>Manage Flow</label>
+                </value>
+                <value>
+                    <fullName>Manage Reports in Public Folders</fullName>
+                    <default>false</default>
+                    <label>Manage Reports in Public Folders</label>
+                </value>
+                <value>
+                    <fullName>Manage Session Permission Set Activations</fullName>
+                    <default>false</default>
+                    <label>Manage Session Permission Set Activations</label>
+                </value>
+                <value>
+                    <fullName>Manage Two-Factor Authentication in API</fullName>
+                    <default>false</default>
+                    <label>Manage Two-Factor Authentication in API</label>
+                </value>
+                <value>
+                    <fullName>Manage Two-Factor Authentication in User Interface</fullName>
+                    <default>false</default>
+                    <label>Manage Two-Factor Authentication in User Interface</label>
+                </value>
+                <value>
+                    <fullName>Modify Metadata (Beta if enabled without Modify All Data)</fullName>
+                    <default>false</default>
+                    <label>Modify Metadata (Beta if enabled without Modify All Data)</label>
+                </value>
+                <value>
+                    <fullName>Password Never Expires</fullName>
+                    <default>false</default>
+                    <label>Password Never Expires</label>
+                </value>
+                <value>
+                    <fullName>Report Builder</fullName>
+                    <default>false</default>
+                    <label>Report Builder</label>
+                </value>
+                <value>
+                    <fullName>Report Builder (Lightning Experience)</fullName>
+                    <default>false</default>
+                    <label>Report Builder (Lightning Experience)</label>
+                </value>
+                <value>
+                    <fullName>Schedule Reports</fullName>
+                    <default>false</default>
+                    <label>Schedule Reports</label>
+                </value>
+                <value>
+                    <fullName>Set Audit Fields upon Record Creation</fullName>
+                    <default>false</default>
+                    <label>Set Audit Fields upon Record Creation</label>
+                </value>
+                <value>
+                    <fullName>Transfer Record</fullName>
+                    <default>false</default>
+                    <label>Transfer Record</label>
+                </value>
+                <value>
+                    <fullName>Two-Factor Authentication for API Logins</fullName>
+                    <default>false</default>
+                    <label>Two-Factor Authentication for API Logins</label>
+                </value>
+                <value>
+                    <fullName>Two-Factor Authentication for User Interface Logins</fullName>
+                    <default>false</default>
+                    <label>Two-Factor Authentication for User Interface Logins</label>
+                </value>
+                <value>
+                    <fullName>Update Records with Inactive Owners</fullName>
+                    <default>false</default>
+                    <label>Update Records with Inactive Owners</label>
+                </value>
+                <value>
+                    <fullName>Assign Permission Sets</fullName>
+                    <default>false</default>
+                    <label>Assign Permission Sets</label>
+                </value>
+                <value>
+                    <fullName>Manage Internal Users</fullName>
+                    <default>false</default>
+                    <label>Manage Internal Users</label>
+                </value>
+                <value>
+                    <fullName>Manage IP Addresses</fullName>
+                    <default>false</default>
+                    <label>Manage IP Addresses</label>
+                </value>
+                <value>
+                    <fullName>Manage Login Access Policies</fullName>
+                    <default>false</default>
+                    <label>Manage Login Access Policies</label>
+                </value>
+                <value>
+                    <fullName>Manage Password Policies</fullName>
+                    <default>false</default>
+                    <label>Manage Password Policies</label>
+                </value>
+                <value>
+                    <fullName>Manage Profiles and Permission Sets</fullName>
+                    <default>false</default>
+                    <label>Manage Profiles and Permission Sets</label>
+                </value>
+                <value>
+                    <fullName>Manage Roles</fullName>
+                    <default>false</default>
+                    <label>Manage Roles</label>
+                </value>
+                <value>
+                    <fullName>Manage Sandboxes</fullName>
+                    <default>false</default>
+                    <label>Manage Sandboxes</label>
+                </value>
+                <value>
+                    <fullName>Manage Sharing</fullName>
+                    <default>false</default>
+                    <label>Manage Sharing</label>
+                </value>
+                <value>
+                    <fullName>Reset User Passwords and Unlock Users</fullName>
+                    <default>false</default>
+                    <label>Reset User Passwords and Unlock Users</label>
+                </value>
+                <value>
+                    <fullName>View All Users</fullName>
+                    <default>false</default>
+                    <label>View All Users</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>User_Permission_Snapshots</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>User Permission Snapshot</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Read_Access__c</columns>
+        <columns>Edit_Access__c</columns>
+        <columns>Delete_Access__c</columns>
+        <columns>View_All_Access__c</columns>
+        <columns>Modify_All_Access__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Nick_s_Snapshots</fullName>
+        <columns>NAME</columns>
+        <columns>Read_Access__c</columns>
+        <columns>Edit_Access__c</columns>
+        <columns>Delete_Access__c</columns>
+        <columns>View_All_Access__c</columns>
+        <columns>Modify_All_Access__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>Nick&apos;s Snapshots</label>
+    </listViews>
+    <nameField>
+        <encrypted>false</encrypted>
+        <label>Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>User Permission Snapshots</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>
