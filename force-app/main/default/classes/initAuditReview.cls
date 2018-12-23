@@ -9,7 +9,7 @@ public class initAuditReview {
 	@AuraEnabled
 	public static void createAuditObjects(){
 
-		List<PermissionSetAssignment> permSetAssignments = [SELECT AssigneeId, PermissionSetId, Assignee.Name FROM PermissionSetAssignment WHERE Assignee.Active = true];
+		List<PermissionSetAssignment> permSetAssignments = [SELECT AssigneeId, PermissionSetId, Assignee.Name FROM PermissionSetAssignment WHERE Assignee.IsActive = true];
 
 		Map<Map<String, String>, List<Map<String, String>>> nameToPermissionMap = new Map<Map<String, String>, List<Map<String, String>>>();
 
