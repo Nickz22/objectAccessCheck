@@ -14,5 +14,6 @@
     </fields>
     <label>In-Scope Audit Object</label>
     <pluralLabel>In-Scope Audit Objects</pluralLabel>
+    <deploymentStatus>Deployed</deploymentStatus>
     <visibility>Public</visibility>
 </CustomObject>
