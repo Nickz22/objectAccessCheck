@@ -10,13 +10,14 @@ public class initAuditReview {
 	public static void createAuditObjects(){
 
 		List<PermissionSetAssignment> permSetAssignments = [SELECT AssigneeId, PermissionSetId, Assignee.Name FROM PermissionSetAssignment WHERE Assignee.IsActive = true];
+		List<ObjectPermissions> allObjectPermissions = initAuditUtility.getAllObjectPermissions();
 
 		Map<Map<String, String>, List<Map<String, String>>> nameToPermissionMap = new Map<Map<String, String>, List<Map<String, String>>>();
 
 		if(!Test.isRunningTest()){
 
 			// aggregate object-permissions at user level
-			System.enqueueJob(new aggregateObjectPermissions(allObjectPermissions, idToPermSetMap.values()[0], nameToPermissionMap));
+			System.enqueueJob(new aggregateObjectPermissions(allObjectPermissions, permSetAssignments, nameToPermissionMap));
 
 		}else{
 
@@ -25,9 +26,9 @@ public class initAuditReview {
 			*/
 
 			// aggregate object-permissions at user level
-			System.enqueueJob(new aggregateObjectPermissions(allObjectPermissions, idToPermSetMap.values()[0], nameToPermissionMap));
+			System.enqueueJob(new aggregateObjectPermissions(allObjectPermissions, permSetAssignments, nameToPermissionMap));
 
-			nameToPermissionMap = initAuditUtility.findUarUserAccess(allObjectPermissions, idToPermSetMap.values()[0], nameToPermissionMap);
+			nameToPermissionMap = initAuditUtility.findUarUserAccess(allObjectPermissions, permSetAssignments, nameToPermissionMap);
 
 			// create permission snapshot records
         	System.enqueueJob(new initPermissionSnapshots(nameToPermissionMap));
