@@ -25,6 +25,7 @@
           "url": "https://github.com/heroku/salesforce-buildpack#v2"
         }
     ],
+    "stack": "heroku-18",
     "environments": {
       "test": {
         "scripts": {
