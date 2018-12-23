@@ -1,7 +1,6 @@
 public class InitAuditUtility {
 
 	// init in-scope object labels
-	// static final List<String> objList = new List<String>{Constants.INSERTION_ORDER_LABEL, Constants.ADACCT_LABEL, Constants.SNAPCHATSALESTEAM_LABEL, Constants.OPPORTUNITY_OBJ, Constants.ACCOUNT_OBJ, Constants.PLACEMENT_LABEL, Constants.UPFRONT_LABEL, Constants.APTTUS_AGREEMENT_LABEL, Constants.ORGANIZATION_LABEL, Constants.CASE_OBJ, Constants.BRAND_LABEL, Constants.UPFRONT_ENTITY_LABEL};
 	static final List<String> objApiNames = getInScopeApiNames();
 	static final List<String> objLabels = getInScopeLabels();
 
@@ -11,14 +10,12 @@ public class InitAuditUtility {
    * @return          List<ObjectPermissions>
      * @param           Set<String> revieweeIds
      */
-	public static List<ObjectPermissions> getAllObjectPermissions(Set<String> revieweeIds){
+	public static List<ObjectPermissions> getAllObjectPermissions(){
 
 		for(In_Scope_Audit_Object__mdt inScopeObject : [SELECT Label, Api_Name__c FROM In_Scope_Audit_Object__mdt]){
 
 			objLabels.add(inScopeObject.Label);
 			objApiNames.add(inScopeObject.Api_Name__c);
-
-			System.debug('objApiNames: '+objApiNames);
 		}
 		/*
 		** Find any ObjectPermission where ParentId == PermissionSetAssignment.PermissionSetId
@@ -27,7 +24,7 @@ public class InitAuditUtility {
 														FROM ObjectPermissions
 														WHERE (ParentId IN (SELECT PermissionSetId
 																			FROM PermissionSetAssignment
-																			WHERE Assignee.Id IN: revieweeIds))
+																			WHERE Assignee.IsActive = true))
 														AND
 														PermissionsRead = true
 														AND
@@ -50,18 +47,9 @@ public class InitAuditUtility {
 		Map<Map<String,String>, List<Map<String, String>>> userPermissionByNameMap = nameByPermissionMap;
 
 		// init top-level permissions container for all objects
-		Map<String, String> insertionOrderAccessMap = new Map<String, String>();
 		Map<String, String> opportunityAccessMap = new Map<String, String>();
 		Map<String, String> accountAccessMap = new Map<String, String>();
-		Map<String, String> placementAccessMap = new Map<String, String>();
-		Map<String, String> agreementAccessMap = new Map<String, String>();
-		Map<String, String> upfrontAccessMap = new Map<String, String>();
-		Map<String, String> sstAccessMap = new Map<String, String>();
-		Map<String, String> orgAccessMap = new Map<String, String>();
-		Map<String, String> adacctAccessMap = new Map<String, String>();
 		Map<String, String> caseAccessMap = new Map<String, String>();
-		Map<String, String> brandAccessMap = new Map<String, String>();
-		Map<String, String> upfrontEntityAccessMap = new Map<String, String>();
 
 		String loopVar;
 
@@ -93,74 +81,29 @@ public class InitAuditUtility {
 					Map<String, String> currentPermissionMap = new Map<String, String>{ 'currentReadAccess' => String.valueOf(objPermission.PermissionsRead), 'currentEditAccess' => String.valueOf(objPermission.PermissionsEdit), 'currentDelAccess' => String.valueOf(objPermission.PermissionsDelete), 'currentViewAllAccess' => String.valueOf(objPermission.PermissionsViewAllRecords), 'currentModifyAllAccess' => String.valueOf(objPermission.PermissionsModifyAllRecords)};
 
 					// check type of in-loop obj permission
-					if(objPermSObjType == Constants.INSERTION_ORDER_OBJ){
-
-						// layer in-loop obj permission over top-level in-memory permissions for this Assignee
-						objAccessMaps.put(Constants.INSERTION_ORDER_LABEL, newObjPermissionMap(userPermissionByNameMap, userIdMap, currentPermissionMap, objAccessMaps.get(Constants.INSERTION_ORDER_LABEL), Constants.INSERTION_ORDER_LABEL));
-
-					}else if(objPermSObjType == Constants.OPPORTUNITY_OBJ){
+					if(objPermSObjType == Constants.OPPORTUNITY_OBJ){
 
 						objAccessMaps.put(Constants.OPPORTUNITY_OBJ, newObjPermissionMap(userPermissionByNameMap, userIdMap, currentPermissionMap, objAccessMaps.get(Constants.OPPORTUNITY_OBJ), Constants.OPPORTUNITY_OBJ));
-
-					}else if(objPermSObjType == Constants.ORGANIZATION_OBJ){
-						
-						objAccessMaps.put(Constants.ORGANIZATION_LABEL, newObjPermissionMap(userPermissionByNameMap, userIdMap, currentPermissionMap, objAccessMaps.get(Constants.ORGANIZATION_LABEL), Constants.ORGANIZATION_LABEL));
 
 					}else if(objPermSObjType == Constants.ACCOUNT_OBJ){
 						
 						objAccessMaps.put(Constants.ACCOUNT_OBJ, newObjPermissionMap(userPermissionByNameMap, userIdMap, currentPermissionMap, objAccessMaps.get(Constants.ACCOUNT_OBJ), Constants.ACCOUNT_OBJ));
 
-					}else if(objPermSObjType == Constants.PLACEMENT_OBJ){
-						
-						objAccessMaps.put(Constants.PLACEMENT_LABEL, newObjPermissionMap(userPermissionByNameMap, userIdMap, currentPermissionMap, objAccessMaps.get(Constants.PLACEMENT_LABEL), Constants.PLACEMENT_LABEL));
-					
-					}else if(objPermSObjType == Constants.APTTUS_AGREEMENT_OBJ){
-						
-						objAccessMaps.put(Constants.APTTUS_AGREEMENT_LABEL, newObjPermissionMap(userPermissionByNameMap, userIdMap, currentPermissionMap, objAccessMaps.get(Constants.APTTUS_AGREEMENT_LABEL), Constants.APTTUS_AGREEMENT_LABEL));
-
-					}else if(objPermSObjType == Constants.UPFRONT_OBJ){
-						
-						objAccessMaps.put(Constants.UPFRONT_LABEL, newObjPermissionMap(userPermissionByNameMap, userIdMap, currentPermissionMap, objAccessMaps.get(Constants.UPFRONT_LABEL), Constants.UPFRONT_LABEL));
-
-					}else if(objPermSObjType == Constants.SNAPCHATSALESTEAM_OBJ){
-						
-						objAccessMaps.put(Constants.SNAPCHATSALESTEAM_LABEL, newObjPermissionMap(userPermissionByNameMap, userIdMap, currentPermissionMap, objAccessMaps.get(Constants.SNAPCHATSALESTEAM_LABEL), Constants.SNAPCHATSALESTEAM_LABEL));
-
-					}else if(objPermSObjType == Constants.ADACCT_OBJ){
-						
-						objAccessMaps.put(Constants.ADACCT_LABEL, newObjPermissionMap(userPermissionByNameMap, userIdMap, currentPermissionMap, objAccessMaps.get(Constants.ADACCT_LABEL), Constants.ADACCT_LABEL));
-					
 					}else if(objPermSObjType == Constants.CASE_OBJ){
 						
 						objAccessMaps.put(Constants.CASE_OBJ, newObjPermissionMap(userPermissionByNameMap, userIdMap, currentPermissionMap, objAccessMaps.get(Constants.CASE_OBJ), Constants.CASE_OBJ));
 					
-					}else if(objPermSObjType == Constants.UPFRONT_ENTITY_OBJ){
-						
-						objAccessMaps.put(Constants.UPFRONT_ENTITY_LABEL, newObjPermissionMap(userPermissionByNameMap, userIdMap, currentPermissionMap, objAccessMaps.get(Constants.UPFRONT_ENTITY_LABEL), Constants.UPFRONT_ENTITY_LABEL));
-					
-					}else if(objPermSObjType == Constants.BRAND_OBJ){
-						
-						objAccessMaps.put(Constants.BRAND_LABEL, newObjPermissionMap(userPermissionByNameMap, userIdMap, currentPermissionMap, objAccessMaps.get(Constants.BRAND_LABEL), Constants.BRAND_LABEL));
 					}
 				}
 			}
 
 			// init entries for this PermissionSetAssignment Assignee
-			insertionOrderAccessMap = getPermissionMap(objAccessMaps.get(Constants.INSERTION_ORDER_LABEL), Constants.INSERTION_ORDER_LABEL);
 			opportunityAccessMap = getPermissionMap(objAccessMaps.get(Constants.OPPORTUNITY_OBJ), Constants.OPPORTUNITY_OBJ);
 			accountAccessMap = getPermissionMap(objAccessMaps.get(Constants.ACCOUNT_OBJ), Constants.ACCOUNT_OBJ);
-			sstAccessMap = getPermissionMap(objAccessMaps.get(Constants.SNAPCHATSALESTEAM_LABEL), Constants.SNAPCHATSALESTEAM_LABEL);
-			upfrontAccessMap = getPermissionMap(objAccessMaps.get(Constants.UPFRONT_LABEL), Constants.UPFRONT_LABEL);
-			agreementAccessMap = getPermissionMap(objAccessMaps.get(Constants.APTTUS_AGREEMENT_LABEL), Constants.APTTUS_AGREEMENT_LABEL);
-			adacctAccessMap = getPermissionMap(objAccessMaps.get(Constants.ADACCT_LABEL), Constants.ADACCT_LABEL);
-			placementAccessMap = getPermissionMap(objAccessMaps.get(Constants.PLACEMENT_LABEL), Constants.PLACEMENT_LABEL);
-			orgAccessMap = getPermissionMap(objAccessMaps.get(Constants.ORGANIZATION_LABEL), Constants.ORGANIZATION_LABEL);
 			caseAccessMap = getPermissionMap(objAccessMaps.get(Constants.CASE_OBJ), Constants.CASE_OBJ);
-			brandAccessMap = getPermissionMap(objAccessMaps.get(Constants.BRAND_LABEL), Constants.BRAND_LABEL);
-			upfrontEntityAccessMap = getPermissionMap(objAccessMaps.get(Constants.UPFRONT_ENTITY_LABEL), Constants.UPFRONT_ENTITY_LABEL);
-
+			
 			// initialize updated top-level in-memory permission for each object
-			List<Map<String, String>> uarUserAccessList = new List<Map<String, String>>{insertionOrderAccessMap, opportunityAccessMap, accountAccessMap, placementAccessMap, orgAccessMap, adacctAccessMap, agreementAccessMap, upfrontAccessMap, sstAccessMap, caseAccessMap, brandAccessMap, upfrontEntityAccessMap};
+			List<Map<String, String>> uarUserAccessList = new List<Map<String, String>>{opportunityAccessMap, accountAccessMap, caseAccessMap};
 
 			// replace old in-memory permissions
 			userPermissionByNameMap.put(userIdMap, uarUserAccessList);
@@ -338,18 +281,6 @@ public class InitAuditUtility {
 		// isolate Users
 		Map<Id, User> uar_Users = new Map<Id, User>([SELECT Id, Name FROM User WHERE Id IN: userIds]);
 
-		// isolate uar users
-		List<Uar_User__c> uarUsers = [SELECT Id, User__c, Review__r.Audit__r.Active__c  FROM Uar_User__c WHERE Review__r.Audit__r.Active__c = true AND User__c IN: userIds];
-
-		// map {User.Id => Uar_User__c.Id}
-		Map<Id, Id> uarUser_User = new Map<Id, Id>();
-
-		for(Uar_User__c uarUser : uarUsers){
-
-			uarUser_User.put(uarUser.User__c, uarUser.Id);
-
-		}
-
 		// loop thru users and respective permissions
 		for(Map<String, String> key : userPermissionByNameMap.keyset()){
 
@@ -357,7 +288,6 @@ public class InitAuditUtility {
 			User_Permissions_Snapshot__c currentUserPermissionSnapshot = new User_Permissions_Snapshot__c();
 			currentUserPermissionSnapshot.Name = uar_Users.get(key.get('UserId')).Name;
 			currentUserPermissionSnapshot.User__c = uar_Users.get(key.get('UserId')).Id;
-			currentUserPermissionSnapshot.Uar_User__c = uarUser_User.get(key.get('UserId'));
 			currentUserPermissionSnapshot.Modify_All_Access__c = '';
 			currentUserPermissionSnapshot.View_All_Access__c = '';
 			currentUserPermissionSnapshot.Delete_Access__c = '';
@@ -412,16 +342,16 @@ public class InitAuditUtility {
 
 		// get in-scope system permissions from related permissionSets
 		Map<Id, PermissionSet> allPermissionSets = new Map<Id, PermissionSet>(
-														[SELECT PermissionsApiEnabled, PermissionsApiUserOnly, PermissionsAuthorApex, PermissionsBulkApiHardDelete,
-														PermissionsCreateCustomizeReports, PermissionsOutboundMigrationToolsUser, PermissionsCreatePackaging,
-														PermissionsInboundMigrationToolsUser, PermissionsInstallPackaging, PermissionsImportCustomObjects,
-														PermissionsIsSsoEnabled, PermissionsManagePvtRptsAndDashbds, PermissionsManageRemoteAccess,
+														[SELECT PermissionsApiEnabled, PermissionsAuthorApex, PermissionsBulkApiHardDelete,
+														PermissionsCreateCustomizeReports,
+														PermissionsInstallPackaging, PermissionsImportCustomObjects,
+														PermissionsManagePvtRptsAndDashbds, PermissionsManageRemoteAccess,
 														PermissionsManageCustomPermissions, PermissionsManageCustomReportTypes, PermissionsManageDashbdsInPubFolders,
 														PermissionsManageDataIntegrations, PermissionsManageInteraction, PermissionsManageReportsInPubFolders, 
 														PermissionsManageSessionPermissionSets, PermissionsManageTwoFactor, PermissionsDelegatedTwoFactor,
-														PermissionsModifyAllData, PermissionsModifyMetadata, PermissionsPasswordNeverExpires, PermissionsCreateReportInLightning,
-														PermissionsNewReportBuilder, PermissionsScheduleReports, PermissionsCreateAuditFields, PermissionsTransferAnyEntity, 
-														PermissionsTwoFactorApi, PermissionsForceTwoFactor, PermissionsUpdateWithInactiveOwner, PermissionsAssignPermissionSets,
+														PermissionsModifyMetadata, PermissionsPasswordNeverExpires, PermissionsCreateReportInLightning,
+														PermissionsNewReportBuilder, PermissionsScheduleReports, PermissionsTransferAnyEntity, 
+														PermissionsTwoFactorApi, PermissionsForceTwoFactor, PermissionsAssignPermissionSets,
 														PermissionsManageInternalUsers, PermissionsManageIpAddresses, PermissionsManageLoginAccessPolicies, 
 														PermissionsManagePasswordPolicies, PermissionsManageProfilesPermissionsets, PermissionsManageRoles, 
 														PermissionsManageSharing, PermissionsManageUsers, PermissionsResetPasswords, PermissionsViewAllUsers
