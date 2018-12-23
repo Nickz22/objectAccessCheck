@@ -25,7 +25,7 @@ HEROKU_PROD_APP_NAME="prod$TICKS"
 HEROKU_PIPELINE_NAME="pipeline$TICKS"
 
 # Usernames or aliases of the orgs you're using
-DEV_HUB_USERNAME="nickzozaya@snapchat.com"
+DEV_HUB_USERNAME="nickzsb.nz@brave-hawk-2umted.com"
 DEV_USERNAME="nickz@trurootscafe.com"
 STAGING_USERNAME="nickzsb.nz@cunning-wolf-8bj6s5.com"
 PROD_USERNAME="nickzsb.nz@cunning-wolf-8gbo0g.com"
