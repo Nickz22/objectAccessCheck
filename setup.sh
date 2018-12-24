@@ -25,10 +25,10 @@ HEROKU_PROD_APP_NAME="prod$TICKS"
 HEROKU_PIPELINE_NAME="pipe$TICKS"
 
 # Usernames or aliases of the orgs you're using
-DEV_HUB_USERNAME="MyTP5"
-DEV_USERNAME="tRCdev"
-STAGING_USERNAME="devHub0"
-PROD_USERNAME="devHub1"
+DEV_HUB_USERNAME="MyTP6"
+DEV_USERNAME="MyTP6"
+STAGING_USERNAME="MyTP6"
+PROD_USERNAME="MyTP6"
 
 # Repository with your code
 GITHUB_REPO="Nickz22/objectAccessCheck"
@@ -66,8 +66,8 @@ heroku config:set SFDX_AUTH_URL=$devSfdxAuthUrl -a $HEROKU_DEV_APP_NAME
 stagingSfdxAuthUrl=$(sfdx force:org:display --verbose -u $STAGING_USERNAME --json | jq -r .result.sfdxAuthUrl)
 heroku config:set SFDX_AUTH_URL=$stagingSfdxAuthUrl -a $HEROKU_STAGING_APP_NAME
 
-stagingSfdxAuthUrl=$(sfdx force:org:display --verbose -u $PROD_USERNAME --json | jq -r .result.sfdxAuthUrl)
-heroku config:set SFDX_AUTH_URL=$stagingSfdxAuthUrl -a $HEROKU_PROD_APP_NAME
+prodSfdxAuthUrl=$(sfdx force:org:display --verbose -u $PROD_USERNAME --json | jq -r .result.sfdxAuthUrl)
+heroku config:set SFDX_AUTH_URL=$prodSfdxAuthUrl -a $HEROKU_PROD_APP_NAME
 
 # Add buildpacks to apps
 heroku buildpacks:add -i 1 https://github.com/wadewegner/salesforce-cli-buildpack#v3 -a $HEROKU_DEV_APP_NAME

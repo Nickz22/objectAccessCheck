@@ -5,14 +5,14 @@
     },
     "env": {
     "SFDX_DEV_HUB_AUTH_URL": {
-      "value": "force://SalesforceDevelopmentExperience:1384510088588713504:5Aep861j70kdjF1ZXNp_VeravR4_eeYN8pDeOcWdPWfCjdYtnP2pvWR_mjJYYytfQWWcNA1.EPr7nrWNZ2HO3P9@brave-wolf-93doeg-dev-ed.my.salesforce.com",
+      "value": "force://SalesforceDevelopmentExperience:1384510088588713504:5Aep861j70kdjF1ZXPJr.c9qHnyjczfoJlRuf0vUCHWzjTNBfFwj8wMkfS3_tChqdwDaDdTGWVZrydnG1PYcK_p@na85.salesforce.com",
       "required": true
     },
-    "SFDX_BUILDPACK_DEBUG": {
+    "HEROKU_APP_NAME": {
       "required": true,
-      "generator":"secret"
+      "generator": "secret"
     },
-    "HEROKU_APP_NAME" : {
+    "SFDX_BUILDPACK_DEBUG": {
       "required": true,
       "generator":"secret"
     }
