@@ -4,8 +4,7 @@
       "pr-predestroy": "./bin/ra-org-delete.sh"
     },
     "env": {
-    "SFDX_DEV_HUB_AUTH_URL": {
-      "value": "",
+    "DEV_HUB_SFDX_AUTH_URL": {
       "required": true
     },
     "HEROKU_APP_NAME": {
