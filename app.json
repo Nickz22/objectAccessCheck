@@ -1,6 +1,5 @@
 {
     "name": "force-app",
-  "repository": "https://github.com/wadewegner/salesforce-dx-pipeline-sample",
     "scripts": {
       "pr-predestroy": "./bin/ra-org-delete.sh"
     },
@@ -8,6 +7,10 @@
     "DEV_HUB_SFDX_AUTH_URL": {
       "value": "force://SalesforceDevelopmentExperience:1384510088588713504:5Aep861j70kdjF1ZXPJr.c9qHnyjczfoJlRuf0vUCHWzjTNBfFwj8wMkfS3_tChqdwDaDdTGWVZrydnG1PYcK_p@na85.salesforce.com",
       "required": true
+    },
+    "HEROKU_APP_NAME": {
+      "required": true,
+      "generator": "secret"
     },
     "SFDX_BUILDPACK_DEBUG": {
       "required": true,
