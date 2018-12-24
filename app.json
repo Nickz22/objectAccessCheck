@@ -5,7 +5,7 @@
     },
     "env": {
     "SFDX_DEV_HUB_AUTH_URL": {
-      "value": "force://SalesforceDevelopmentExperience:1384510088588713504:5Aep861j70kdjF1ZXPJr.c9qHnyjczfoJlRuf0vUCHWzjTNBfFwj8wMkfS3_tChqdwDaDdTGWVZrydnG1PYcK_p@na85.salesforce.com",
+      "value": "",
       "required": true
     },
     "HEROKU_APP_NAME": {
