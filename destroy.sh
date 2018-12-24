@@ -1,4 +1,4 @@
-heroku pipelines:destroy pipe1545682052
-heroku apps:destroy -a dev1545682052 -c dev1545682052
-heroku apps:destroy -a staging1545682052 -c staging1545682052
-heroku apps:destroy -a prod1545682052 -c prod1545682052
+heroku pipelines:destroy pipeline1545693792
+heroku apps:destroy -a dev1545693792 -c dev1545693792
+heroku apps:destroy -a staging1545693792 -c staging1545693792
+heroku apps:destroy -a prod1545693792 -c prod1545693792
